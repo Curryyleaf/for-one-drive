@@ -1,0 +1,119 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .blank{
+  color: aqua;
+  background-color: black;
+}
+
+ */
+
+/* Header.css */
+
+/* Style the entire navigation bar */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+nav img{
+  height: 40px;
+  margin-right: 5px;
+
+}
+
+nav h3{
+  margin-right: auto;
+  color: #61DaF8;
+  font-weight: 700;
+  font-size: 22px;
+
+
+}
+
+ nav h4{
+  color: #DEE8F8;
+
+
+ }
+
+ .main-content{
+  background-color: #33373E;
+  color: white ;
+  height: 350px;
+ }
+
+ .main-content h1{
+  padding-top: 40px;
+  margin-left: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+ 
+
+ }
+
+ .main-content ul{
+
+   margin-left: 150px;
+   margin-top: 40px;
+   padding-top: 5px;
+   
+
+ }
+ 
+ .main-content li {
+   padding: 10px;
+ }
+
+ .main-content li ::marker{
+  background-color: #61DaF8;
+  font-size: 1.4 rem;
+
+}

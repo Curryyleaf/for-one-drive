@@ -1,0 +1,77 @@
+The parameters inside a callback function can vary depending on the context of the function. Here are some common scenarios and the corresponding parameters:
+
+1. **Array Iteration (e.g., `map`, `forEach`, `filter`):**
+   - `currentValue`: The current element being processed.
+   - `index`: The index of the current element.
+   - `array`: The array that `map`, `forEach`, or `filter` is being called upon.
+
+   Example:
+   ```javascript
+   array.map((currentValue, index, array) => {
+     // Your code here
+   });
+   ```
+
+2. **Event Handling:**
+   - `event`: The event object representing the triggered event.
+
+   Example:
+   ```javascript
+   button.addEventListener('click', (event) => {
+     // Your code here
+   });
+   ```
+
+3. **Asynchronous Callbacks (e.g., `setTimeout`, `fetch`):**
+   - Parameters depend on the specific API, but commonly you have:
+     - `response` or `result`: The result of the asynchronous operation.
+     - `error` or `err`: An error object if the operation encounters an error.
+
+   Example:
+   ```javascript
+   setTimeout((result, error) => {
+     // Your code here
+   }, 1000);
+   ```
+
+4. **Promise Handling:**
+   - `resolve`: Function to be called if the Promise is fulfilled.
+   - `reject`: Function to be called if the Promise is rejected.
+
+   Example:
+   ```javascript
+   new Promise((resolve, reject) => {
+     // Your code here
+   }).then((result) => {
+     // Your code here
+   }).catch((error) => {
+     // Your code here
+   });
+   ```
+
+5. **Array Reduce:**
+   - `accumulator`: The accumulated result.
+   - `currentValue`: The current element being processed.
+   - `index`: The index of the current element.
+   - `array`: The array that `reduce` is being called upon.
+
+   Example:
+   ```javascript
+   array.reduce((accumulator, currentValue, index, array) => {
+     // Your code here
+   }, initialValue);
+   ```
+
+6. **Object Iteration (e.g., `Object.keys`, `Object.entries`):**
+   - `key`: The current key being processed.
+   - `value`: The value associated with the current key.
+   - `object`: The object being iterated.
+
+   Example:
+   ```javascript
+   Object.keys(object).forEach((key) => {
+     // Your code here
+   });
+   ```
+
+These are just a few examples, and the specific parameters depend on the function or API being used. Always refer to the documentation for the particular function or method you are working with.
